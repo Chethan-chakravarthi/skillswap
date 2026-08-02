@@ -1,0 +1,18 @@
+/* Clean global resets for SkillSwap */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #0c0919;
+  font-family: 'Outfit', sans-serif;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}

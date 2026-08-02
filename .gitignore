@@ -1,0 +1,45 @@
+# --- Env / secrets ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# --- Backend (Gradle / Java) ---
+backend/build/
+backend/.gradle/
+backend/.jdk17/
+backend/.javatmp/
+backend/out/
+# Local-machine-only JDK path override (workaround for a sandbox-specific
+# AF_UNIX socket bug); must never ship to CI/containers with a different layout.
+backend/gradle.properties
+*.class
+*.jar
+!backend/gradle/wrapper/gradle-wrapper.jar
+HELP.md
+
+# --- Frontend (Node / Vite) ---
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/*.local
+
+# --- Any bundled/portable JDKs anywhere in the repo ---
+**/.jdk*/
+**/jdk-*/
+
+# --- Claude Code runtime state ---
+.claude/*.lock
+
+# --- IDE / OS ---
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.iml
+.DS_Store
+Thumbs.db
+
+# --- Logs ---
+*.log
+npm-debug.log*
