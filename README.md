@@ -1,5 +1,9 @@
 # SkillSwap – Share Skills, Build Connections
 
+## Live
+- **Frontend**: https://skill-swap-connect.netlify.app
+- **Backend**: https://skillswap-backend-i968.onrender.com (health check: `/api/status`)
+
 ## Tagline
 **Learn Anything. Teach Everything.**
 
@@ -13,7 +17,7 @@ SkillSwap is a platform designed to connect individuals based on their skills an
 - **Reviews & Ratings**: Rate members after successful sessions to build trust.
 
 ## Technology Stack
-- **Backend**: Spring Boot, Java, Spring Data JPA, Hibernate, Spring Security, JWT, Gradle, MySQL.
+- **Backend**: Spring Boot, Java, Spring Data JPA, Hibernate, Spring Security, JWT, Gradle, PostgreSQL (H2 for local dev).
 - **Frontend**: React + Vite, Vanilla CSS.
 
 ## Directory Structure
